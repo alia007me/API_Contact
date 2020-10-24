@@ -27,4 +27,6 @@ Route::middleware('auth:api')->group(function () {
     Route::post('update/{id}', [ContactController::class, 'update']);
     Route::get('delete/{id}', [ContactController::class, 'delete']);
     Route::get('list', [ContactController::class, 'list']);
+    Route::get('user/edit/',[UserController::class,'edit']);
+    Route::post('user/update/',[UserController::class,'update']);
 });
